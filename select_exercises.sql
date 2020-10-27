@@ -19,8 +19,9 @@ USE codeup_test_db;
 -- SELECT name FROM albums WHERE release_date > 1989 && release_date < 2000;
 
 -- albums less than 20mill sales
-SELECT 'ARE LESS THAN 20 MILLION' AS 'ALBUM SALES THAT';
-SELECT name FROM albums WHERE sales < 20;
+-- SELECT 'ARE LESS THAN 20 MILLION' AS 'ALBUM SALES THAT';
+-- SELECT name FROM albums WHERE sales < 20;
 
 -- albums with genre "Rock"
--- SELECT 'Rock' AS 'Genre';
+SELECT 'THE ROCK GENRE' AS 'ALL ALBUMS WITH';
+SELECT name FROM albums WHERE genre = 'Rock';

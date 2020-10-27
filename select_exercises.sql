@@ -11,12 +11,12 @@ USE codeup_test_db;
 -- SELECT release_date FROM albums WHERE `name` = 'Sgt. Pepper''s Lonely Hearts Club Band';
 
 -- genre for Nevermind
-SELECT 'GENRE LISTING' AS 'ALBUM NEVERMIND''S';
-SELECT genre FROM albums WHERE `name` = 'Nevermind';
+-- SELECT 'GENRE LISTING' AS 'ALBUM NEVERMIND''S';
+-- SELECT genre FROM albums WHERE `name` = 'Nevermind';
 
 -- albums released in 1990's
--- SELECT 'RELEASED' AS 'ALBUMS FROM 1990''s';
--- SELECT name FROM albums WHERE release_date > 1989 && release_date < 2000;
+SELECT 'ALBUMS RELEASED' AS 'DURING THE 1990''s';
+SELECT name FROM albums WHERE release_date > 1989 && release_date < 2000;
 
 -- albums less than 20mill sales
 -- SELECT 'LESS THAN 20 MILLION' AS 'ALBUM SALES';

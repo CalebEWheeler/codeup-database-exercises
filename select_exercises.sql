@@ -3,12 +3,12 @@ USE codeup_test_db;
 -- Write queries to find the following info, before each item output a caption explaining the results
 
 -- name of albums by Pink Floyd
-SELECT 'ALBUMS BY PINK FLOYD' AS 'INFO';
-SELECT * FROM albums WHERE artist = 'Pink Floyd';
+-- SELECT 'ALBUMS BY PINK FLOYD' AS 'INFO';
+-- SELECT * FROM albums WHERE artist = 'Pink Floyd';
 
 -- year Sgt. Pepper's Lonely Hearts Club Band was released
--- SELECT 'SGT. PEPPERS LONELY HEART''S ClUB BAND' AS 'YEAR RELEASED';
--- SELECT release_date FROM albums WHERE `name` = 'Sgt. Pepper''s Lonely Hearts Club Band';
+SELECT 'SGT. PEPPERS LONELY HEART''S ClUB BAND' AS 'YEAR RELEASED';
+SELECT release_date FROM albums WHERE `name` = 'Sgt. Pepper''s Lonely Hearts Club Band';
 
 -- genre for Nevermind
 -- SELECT 'NEVERMIND' AS 'GENRE FOR';

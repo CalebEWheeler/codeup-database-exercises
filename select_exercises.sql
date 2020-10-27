@@ -7,12 +7,12 @@ USE codeup_test_db;
 -- SELECT * FROM albums WHERE artist = 'Pink Floyd';
 
 -- year Sgt. Pepper's Lonely Hearts Club Band was released
-SELECT 'SGT. PEPPERS LONELY HEART''S ClUB BAND' AS 'YEAR RELEASED';
-SELECT release_date FROM albums WHERE `name` = 'Sgt. Pepper''s Lonely Hearts Club Band';
+-- SELECT 'SGT. PEPPERS LONELY HEART''S ClUB BAND' AS 'YEAR RELEASED';
+-- SELECT release_date FROM albums WHERE `name` = 'Sgt. Pepper''s Lonely Hearts Club Band';
 
 -- genre for Nevermind
--- SELECT 'NEVERMIND' AS 'GENRE FOR';
--- SELECT genre FROM albums WHERE `name` = 'Nevermind';
+SELECT 'GENRE LISTING' AS 'ALBUM NEVERMIND''S';
+SELECT genre FROM albums WHERE `name` = 'Nevermind';
 
 -- albums released in 1990's
 -- SELECT 'RELEASED' AS 'ALBUMS FROM 1990''s';

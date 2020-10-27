@@ -15,12 +15,12 @@ USE codeup_test_db;
 -- SELECT genre FROM albums WHERE `name` = 'Nevermind';
 
 -- albums released in 1990's
-SELECT 'ALBUMS RELEASED' AS 'DURING THE 1990''s';
-SELECT name FROM albums WHERE release_date > 1989 && release_date < 2000;
+-- SELECT 'ALBUMS RELEASED' AS 'DURING THE 1990''s';
+-- SELECT name FROM albums WHERE release_date > 1989 && release_date < 2000;
 
 -- albums less than 20mill sales
--- SELECT 'LESS THAN 20 MILLION' AS 'ALBUM SALES';
--- SELECT name FROM albums WHERE sales < 20;
+SELECT 'ARE LESS THAN 20 MILLION' AS 'ALBUM SALES THAT';
+SELECT name FROM albums WHERE sales < 20;
 
 -- albums with genre "Rock"
 -- SELECT 'Rock' AS 'Genre';

@@ -3,7 +3,7 @@ USE employees;
 SELECT *
 FROM employees
 WHERE first_name IN ('Irena', 'Vidya', 'Maya')
-ORDER BY first_name ASC, last_name ASC;
+ORDER BY last_name ASC, first_name ASC;
 
 -- SELECT *
 -- FROM employees

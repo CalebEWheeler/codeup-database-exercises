@@ -1,5 +1,10 @@
 USE employees;
 
+SELECT *
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY first_name ASC;
+
 -- SELECT *
 -- FROM employees
 -- WHERE gender = 'm'
@@ -36,7 +41,7 @@ USE employees;
 -- FROM employees
 -- WHERE last_name LIKE '%q%';
 
-SELECT *
-FROM employees
-WHERE last_name LIKE '%q%'
-  AND last_name NOT Like'%qu%';
+-- SELECT *
+-- FROM employees
+-- WHERE last_name LIKE '%q%'
+--   AND last_name NOT Like'%qu%';

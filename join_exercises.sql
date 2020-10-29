@@ -29,3 +29,15 @@ FROM employees AS e
               ON e.emp_no = s.emp_no
 WHERE dm.to_date = '9999-01-01' AND s.to_date = '9999-01-01'
 ORDER BY d.dept_name ASC;
+
+SELECT *
+FROM employees
+WHERE emp_no = '101010';
+
+SELECT *
+FROM employees
+WHERE hire_date IN (
+    SELECT hire_date
+    FROM employees
+    WHERE emp_no = '101010'
+    )

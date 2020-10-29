@@ -32,10 +32,6 @@ ORDER BY d.dept_name ASC;
 
 SELECT *
 FROM employees
-WHERE emp_no = '101010';
-
-SELECT *
-FROM employees
 WHERE hire_date IN (
     SELECT hire_date
     FROM employees
@@ -49,4 +45,13 @@ WHERE titles.emp_no
     SELECT employees.emp_no
     FROM employees
     WHERE first_name = 'Aamod'
-    )
+    );
+
+SELECT first_name, last_name
+FROM employees
+WHERE employees.emp_no
+    IN (
+        SELECT dept_manager.emp_no
+        FROM dept_manager
+        WHERE gender = 'f' AND to_date = '9999-01-01'
+          );

@@ -18,4 +18,14 @@ WHERE dm.to_date = '9999-01-01'
 ORDER BY d.dept_name ASC;
 
 
-
+SELECT d.dept_name AS 'Department Name', CONCAT(e.first_name, ' ',e.last_name) AS 'Department Manager', s.salary
+FROM employees AS e
+         JOIN dept_manager AS dm
+              ON dm.emp_no = e.emp_no
+                  AND e.gender = 'f'
+         JOIN departments AS d
+              ON d.dept_no = dm.dept_no
+         JOIN salaries AS s
+              ON e.emp_no = s.emp_no
+WHERE dm.to_date = '9999-01-01' AND s.to_date = '9999-01-01'
+ORDER BY d.dept_name ASC;

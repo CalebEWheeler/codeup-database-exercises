@@ -17,6 +17,15 @@ JOIN departments AS d
 WHERE dm.to_date = '9999-01-01'
 ORDER BY d.dept_name ASC;
 
+SELECT t.title AS Title, COUNT(t.emp_no) AS Count
+FROM titles AS t
+JOIN dept_emp AS de ON de.emp_no = t.emp_no
+JOIN departments AS d ON de.dept_no = d.dept_no
+WHERE de.dept_no = 'd009'
+AND t.to_date = '9999-01-01'
+AND de.to_date = '9999-01-01'
+GROUP BY t.title;
+
 
 SELECT d.dept_name AS 'Department Name', CONCAT(e.first_name, ' ',e.last_name) AS 'Department Manager', s.salary
 FROM employees AS e

@@ -19,11 +19,17 @@ USE employees;
 -- WHERE last_name LIKE 'E%'
 --    OR last_name LIKE '%E';
 
--- SELECT *
--- FROM employees
--- WHERE last_name LIKE 'E%'
---   AND last_name LIKE '%E'
--- ORDER BY emp_no DESC;
+SELECT *
+FROM employees
+WHERE last_name LIKE 'E%'
+  AND last_name LIKE '%E'
+ORDER BY emp_no DESC;
+
+SELECT CONCAT(e.first_name, ' ', e.last_name) AS 'FULL NAME'
+FROM employees AS e
+WHERE last_name LIKE 'E%'
+  AND last_name LIKE '%E'
+ORDER BY emp_no DESC;
 
 -- SELECT *
 -- FROM employees
